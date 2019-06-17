@@ -1,27 +1,6 @@
 {% extends "layout.njk" %}
-
 {% block content %}
-<div class="bg-gray">
-  <div class="w-service h-slider max-w-container mx-auto">
-    <div class="relative top-0">
-      <h3 class="font-bold text-4xl my-3">Services</h3>
-      <form action="" class="flex my-5">
-        <input class="flex-grow h-16 w-1/2 border-solid border border-bordercard" type="search" name="" id="" placeholder="Je cherche">
-        <select class="flex-grow-0 h-16 w-1/4 bg-white border-solid border border-bordercard" name="" id="">
-          <option value="">Je suis</option>
-        </select>
-        <select class="flex-grow-0 h-16 w-1/4 bg-white border-solid border border-bordercard" name="" id="">
-          <option value="">J'habite</option>
-        </select>
-      </form>
-    </div>
-    <div class="flex flex-wrap justify-between h-cardwidth">
-      {% for service in services %}
-      {% include "./components/service.njk" %}
-      {% endfor %}
-    </div>
-  </div>
-</div>
-{% include "./components/article.njk" %}
+{% include "./partials/services.njk" %}
+{% include "./partials/articles.njk" %}
 {% endblock %}
 

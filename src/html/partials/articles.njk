@@ -1,0 +1,18 @@
+<div class="flex m-8">
+    <div class="w-1/2 ">
+        <h2 class="mb-8 text-4xl font-bold"> Evenement</h2>
+        <div class="flex flex-col mx-5">
+            {% for article in articles  %}
+            {% include "../components/article.njk" %}
+            {% endfor %}
+        </div>
+    </div>
+    <div class="w-1/2">
+        <h2 class="mb-8 text-4xl font-bold"> Actualités </h2>
+        <div class="flex flex-col mx-5">
+            {% for article in articles  %}
+            {% include "../components/article.njk" %}
+            {% endfor %}
+        </div>
+    </div>
+</div>

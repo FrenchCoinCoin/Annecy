@@ -1,0 +1,65 @@
+{% block header %}
+    <div class="bg-top bg-cover h-slider"style="background-image: url(../assets/img/annecy.png)" ></div>
+      <div class="header__container absolute inset-x-0 top-0 mx-auto max-w-container h-header bg-red text-white font-sans font-bold">
+        <div class="header__menu flex justify-between items-center no-underline py-3 px-6 m-0 font-bold header__menu-top h-10 text-sm border-separator border-b border-solid">
+          <ul class="header__item flex">
+            <li class="header__item_top mr-8 header__item_top-left ">
+              <select>
+                <option value="">FRANCAIS</option>
+              </select>
+            </li>
+            <li class="header__item_top mr-8 header__item_top-left">
+              <select>
+                <option value="">LES COMMUNES</option>
+              </select>
+            </li>
+          </ul>
+          <ul class="header__item flex">
+            <li class="header__item_top mr-8 header__item_top-right">
+              <select>
+                <option value="">MON ESPACE</option>
+              </select>
+            </li>
+            <li class="header__item_top header__item_top-right">
+            <div class="flex">
+              {% include "../components/iconsearch.njk" %}
+              <input class=" bg-transparent w-24" type="search" placeholder="RECHERCHE">
+            </div>
+            </li>
+          </ul>
+        </div>
+        <div class="header__menu flex justify-between items-center no-underline py-3 px-6 m-0 font-bold
+                       header__menu-btm h-20 text-2xl ">
+          <a class="header__item flex header__logo text-3xl" href="#">
+            ANNECY
+          </a>
+          <ul class="header__item flex">
+            <li class="header__item_btm-right py-0 px-5">
+              <a href="#">
+                Actualités
+              </a>
+            </li>
+            <li class="header__item_btm-right py-0 px-5">
+              <a href="#">
+                Pratique
+              </a>
+            </li>
+            <li class="header__item_btm-right py-0 px-5">
+              <a href="#">
+                Actions &amp; Projets
+              </a>
+            </li>
+            <li class="header__item_btm-right py-0 px-5">
+              <a href="#">
+                Municipalité
+              </a>
+            </li>
+            <li class="header__item_btm-right py-0 pl-5 pr-0">
+              <a href="#">
+                Culture
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    {% endblock %}

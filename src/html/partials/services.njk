@@ -1,0 +1,31 @@
+<div class="bg-gray">
+  <div class="w-service h-slider max-w-container mx-auto">
+    <div class="relative top-0">
+      <h3 class="font-bold text-4xl pt-16 pb-8">Services</h3>
+      <form action="" class="flex pb-8">
+      <div class="flex flex-grow-0 h-16 w-1/2 bg-white border-solid border border-bordercard items-center" >
+      {% include "../components/iconsearch.njk" %}
+        <input type="search" name="" id="" placeholder="Je cherche">
+        </div>
+        <div class="flex flex-grow-0 h-16 w-1/4 bg-white border-solid border border-bordercard items-center">
+        {% include "../components/iconbody.njk" %}
+        <select name="" id="">
+          <option value="">
+          Je suis</option>
+        </select>
+        </div>
+        <div class="flex flex-grow-0 h-16 w-1/4 bg-white border-solid border border-bordercard items-center">
+        {% include "../components/iconmap.njk" %}
+        <select name="" id="">
+          <option value="">J'habite</option>
+        </select>
+        </div>
+      </form>
+    </div>
+    <div class="flex flex-wrap justify-between h-cardwidth">
+      {% for service in services %}
+      {% include "../components/service.njk" %}
+      {% endfor %}
+    </div>
+  </div>
+</div>

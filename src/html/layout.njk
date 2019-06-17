@@ -4,158 +4,22 @@
     <title>Tailwind Starter Template</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link href="../assets/css/styles.css" rel="stylesheet"/>
+    <link href="../assets/css/styles.css" rel="stylesheet" />
   </head>
   <body>
-      {# Barre de navigation  #}
+    {# Barre de navigation  #}
     <header class="header relative inset-x-0 top-0 z-10">
-      <div class="bg-top bg-cover h-slider"style="background-image: url(../assets/img/annecy.png)" ></div>
-      <div class="header__container absolute inset-x-0 top-0 mx-auto max-w-container h-header bg-red text-white font-sans font-bold">
-        <div class="header__menu flex justify-between items-center no-underline py-3 px-6 m-0 font-bold header__menu-top h-10 text-sm border-separator border-b border-solid">
-          <ul class="header__item flex">
-            <li class="header__item_top mr-8 header__item_top-left ">
-              <select>
-                <option value="">FRANCAIS</option>
-              </select>
-            </li>
-            <li class="header__item_top mr-8 header__item_top-left">
-              <select>
-                <option value="">LES COMMUNES</option>
-              </select>
-            </li>
-          </ul>
-          <ul class="header__item flex">
-            <li class="header__item_top mr-8 header__item_top-right">
-              <select>
-                <option value="">MON ESPACE</option>
-              </select>
-            </li>
-            <li class="header__item_top header__item_top-right">
-              <input class=" bg-transparent w-24" type="search" placeholder="RECHERCHE">
-            </li>
-          </ul>
-        </div>
-        <div class="header__menu flex justify-between items-center no-underline py-3 px-6 m-0 font-bold
-                       header__menu-btm h-20 text-2xl ">
-          <a class="header__item flex header__logo text-3xl" href="#">
-            ANNECY
-          </a>
-          <ul class="header__item flex">
-            <li class="header__item_btm-right py-0 px-5">
-              <a href="#">
-                Actualités
-              </a>
-            </li>
-            <li class="header__item_btm-right py-0 px-5">
-              <a href="#">
-                Pratique
-              </a>
-            </li>
-            <li class="header__item_btm-right py-0 px-5">
-              <a href="#">
-                Actions &amp; Projets
-              </a>
-            </li>
-            <li class="header__item_btm-right py-0 px-5">
-              <a href="#">
-                Municipalité
-              </a>
-            </li>
-            <li class="header__item_btm-right py-0 pl-5 pr-0">
-              <a href="#">
-                Culture
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
+      {% include "./partials/header.njk" %}
     </header>
-        {# MAIN #}
-            <main class="main relative ">
-            {% block content %}
-                Pas de contenu
-            {% endblock %}
-            </main>
-        {# FOOTER #}
+    {# MAIN #}
+    <main class="main relative ">
+      {% block content %}
+      Pas de contenu
+      {% endblock %}
+    </main>
+    {# FOOTER #}
     <footer class="footer relative inset-x-0 bottom-0 z-1 h-footer bg-gray">
-      <div class="footer__container my-0 mx-auto max-w-container  text-black font-bold bg-gray">
-        <div class="footer__top h-footer-top text-sm border-black border-b border-solid flex justify-center items-center">
-          <ul class="footer__top-item flex">
-            <li class="footer__item_logo mr-5">
-              <img src="../assets/img/logo_region_1.png" alt="">
-            </li>
-            <li class="footer__item_logo mr-5">
-              <img src="../assets/img/logo_region_2.png" alt="">
-            </li>
-            <li class="footer__item_logo mr-5">
-              <img src="../assets/img/logo_region_3.png" alt="">
-            </li>
-            <li class="footer__item_logo mr-5">
-              <img src="../assets/img/logo_region_4.png" alt="">
-            </li>
-            <li class="footer__item_logo mr-5">
-              <img src="" alt="">
-            </li>
-          </ul>
-        </div>
-        <div class="footer__middle flex justify-between items-center h-footer-middle border-black border-b border-solid ">
-          <ul class="footer__middle-item flex">
-            <li class="footer__middle-log w-4 h-4 mr-5">
-              <a href="#">
-                <img alt="follow me on facebook" src="https://c866088.ssl.cf3.rackcdn.com/assets/facebook30x30.png" border=0>
-              </a>
-              </li>
-            <li class="footer__middle-log w-4 h-4 mr-5">
-              <a href="#">
-                <img alt="follow me on Twitter" src="https://c866088.ssl.cf3.rackcdn.com/assets/twitter30x30.png"
-                  border=0>
-              </a>
-            </li>
-            <li class="footer__middle-log w-4 h-4 mr-5">
-              <a href="#">
-                <img alt="follow me on pinterest" src="https://c866088.ssl.cf3.rackcdn.com/assets/pinterest30x30.png" border=0></a>
-              </a>
-            </li>
-            <li class="footer__middle-log w-4 h-4 mr-5">
-              <a href="#">
-                <img alt="follow me on instagram" src="https://c866088.ssl.cf3.rackcdn.com/assets/instagram30x30.png" border=0>
-              </a>
-            </li>
-            <li class="footer__middle-log w-4 h-4 mr-5">
-              <a href="#">
-                <img alt="follow me on youtube" src="https://c866088.ssl.cf3.rackcdn.com/assets/youtube30x30.png" border=0>
-              </a>
-            </li>
-          </ul>
-          <div class="footer__middle-right">
-            <label for="email">Newsletter:</label>
-            <input class="h-10"type="email" id="email" placeholder="Entrez votre email">
-            <button class="btn__newsletter text-white font-bold font-base text-center bg-black w-24 h-10" type="button">
-              S'inscrire
-            </button>
-          </div>
-        </div>
-        <div class="footer__bottom flex justify-between items-center h-24 text-black font-base">
-          <ul class="footer__bottom-left flex">
-            <li class="footer__bottom-item mr-10">
-              <a href="#">
-                Index du site
-              </a>
-            </li>
-            <li class="footer__bottom-item mr-10">
-              <a href="#">
-                Mention Légales
-              </a>
-            </li>
-            <li class="footer__bottom-item mr-10">
-              <a href="#">
-                Contact
-              </a>
-            </li>
-          </ul>
-          <p class="footer__bottom-cop text-xs text-black"> &copy; 2018 Ville d'Annecy. Tous droits réservés.
-        </div>
-      </div>
+      {% include "./partials/footer.njk" %}
     </footer>
   </body>
 </html>

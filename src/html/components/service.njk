@@ -1,13 +1,21 @@
    {% if service.categories == "Download"  %}
       {% set subtitle = "Télécharger le document" %}
+      {% set iconcolor = "bg-icondownload" %}
    {% elif service.categories == "Book" %}
       {% set subtitle = "Reserver" %}
+      {% set iconcolor = "bg-iconbook" %}
    {% else %}
       {% set subtitle = "Devis" %}
+      {% set iconcolor = "bg-icondevis" %}
    {% endif %}
 
 
-<div class=" w-carwidth bg-white m-1 h-24 border-solid border border-bordercard shadow">
-   <h1 class="p-4">{{ service.title }}</h1>
-   <h4 class="p-4">{{ subtitle}}</h4>
+<div class=" flex items-center w-carwidth bg-white m-1 h-24 border-solid border border-bordercard shadow">
+<div>
+<div class="w-10 h-10 rounded-full mx-2 {{iconcolor}}"></div>
+</div>
+<div>
+   <h1 class="p-2">{{ service.title }}</h1>
+   <h4 class="p-2">{{ subtitle}}</h4>
+</div>
 </div>

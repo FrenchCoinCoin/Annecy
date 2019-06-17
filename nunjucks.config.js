@@ -39,25 +39,25 @@ module.exports = {
         ],
         articles: [
             {
-                date: "1 Janvier",
+                date: "27 OCT. 28 OCT.",
                 title: "Titre1",
                 content:"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste quo cupiditate excepturi quasi blanditiis sequi neque velit distinctio iusto laudantium fugiat explicabo quisquam nisi pariatur corporis deserunt, nobis rationelorem Lorem ipsum"
 
             },
             {
-                date: "2 Mars",
+                date: "28 OCT.",
                 title: "Titre2",
                 content:"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste quo cupiditate excepturi quasi blanditiis sequi neque velit distinctio iusto laudantium fugiat explicabo quisquam nisi pariatur corporis deserunt, nobis rationelorem Lorem ipsum"
 
             },
             {
-                date: "3 Juin",
+                date: "02 NOV.",
                 title: "Titre3",
                 content:"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste quo cupiditate excepturi quasi blanditiis sequi neque velit distinctio iusto laudantium fugiat explicabo quisquam nisi pariatur corporis deserunt, nobis rationelorem Lorem ipsum"
 
             },
             {
-                date: "4 Oct",
+                date: "10 NOV.",
                 title: "Titre4",
                 content:"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste quo cupiditate excepturi quasi blanditiis sequi neque velit distinctio iusto laudantium fugiat explicabo quisquam nisi pariatur corporis deserunt, nobis rationelorem Lorem ipsum"
 

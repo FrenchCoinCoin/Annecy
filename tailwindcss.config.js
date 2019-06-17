@@ -10,12 +10,16 @@ module.exports = {
       blue: '#87ceeb',
       'separator': '#cd0027',
       'bordercard':'#eaedf3',
+      'datecolor':'#999999',
+      'icondownload':'#549ec9',
+      'iconbook':'#2da59c',
+      'icondevis':'#e2a247',
     },
     fontFamily: {
       'sans': ['GothamBook', 'sans-serif'],
     },
     height: {
-      'slider': '800px',
+      'slider': '850px',
       'footer': '360px',
       'footer-top': '140px',
       'footer-middle': '100px',
