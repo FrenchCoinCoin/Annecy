@@ -1,0 +1,13 @@
+   {% if service.categories == "Download"  %}
+      {% set subtitle = "Télécharger le document" %}
+   {% elif service.categories == "Book" %}
+      {% set subtitle = "Reserver" %}
+   {% else %}
+      {% set subtitle = "Devis" %}
+   {% endif %}
+
+
+<div class=" w-carwidth bg-white m-1 h-24 border-solid border border-bordercard shadow">
+   <h1 class="p-4">{{ service.title }}</h1>
+   <h4 class="p-4">{{ subtitle}}</h4>
+</div>

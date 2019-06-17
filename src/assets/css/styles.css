@@ -14,12 +14,15 @@ body {
     overflow-x: hidden;
 }
 
-
-.header__container {
- 
-    font-family: "GothamBook" , sans-serif;
+.main{
+   /*  background-color: skyblue; */
+   
 }
 
+/* .header__container {
+    font-family: "GothamBook" , sans-serif;
+}
+ */
 /* .header__menu-top{
     height: 40px;
     font-size: 14px;
