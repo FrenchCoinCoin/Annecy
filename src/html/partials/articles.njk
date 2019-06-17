@@ -1,18 +1,24 @@
 <div class="flex m-8">
-    <div class="w-1/2 ">
-        <h2 class="mb-8 text-4xl font-bold"> Evenement</h2>
-        <div class="flex flex-col mx-5">
+    <div class="w-1/2 mr-5 border-r-2 border-solid border-gray ">
+        <h2 class="mb-8 text-5xl font-bold"> Evénement</h2>
+        <div class="flex flex-col">
             {% for article in articles  %}
             {% include "../components/article.njk" %}
             {% endfor %}
+            <a href="#">
+                Voir tous le calendrier.
+            </a>
         </div>
     </div>
-    <div class="w-1/2">
-        <h2 class="mb-8 text-4xl font-bold"> Actualités </h2>
-        <div class="flex flex-col mx-5">
+    <div class="w-1/2 ml-5">
+        <h2 class="mb-8 text-5xl font-bold"> Actualités </h2>
+        <div class="flex flex-col">
             {% for article in articles  %}
             {% include "../components/article.njk" %}
             {% endfor %}
+            <a href="#">
+                Voir toutes les actualités.
+            </a>
         </div>
     </div>
 </div>

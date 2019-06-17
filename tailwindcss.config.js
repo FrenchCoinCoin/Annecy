@@ -14,6 +14,8 @@ module.exports = {
       'icondownload':'#549ec9',
       'iconbook':'#2da59c',
       'icondevis':'#e2a247',
+      'bordernews':'#e6e6e6',
+      'copyrightcolor':'#666666',
     },
     fontFamily: {
       'sans': ['GothamBook', 'sans-serif'],
@@ -74,6 +76,7 @@ module.exports = {
       'full': '100%',
       'screen': '100vw',
       'carwidth': '580px',
+      'contentwidth': '410px',
     },
     maxWidth: {
       'xs': '20rem',
