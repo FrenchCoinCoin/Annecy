@@ -1,22 +1,22 @@
    {% if service.categories == "Download"  %}
       {% set subtitle = "Télécharger le document" %}
       {% set iconcolor = "bg-icondownload" %}
-      {% set iconcard = "download.njk" %}
+      {% set iconcard = "./downloadicon.njk" %}
    {% elif service.categories == "Book" %}
       {% set subtitle = "Reserver" %}
       {% set iconcolor = "bg-iconbook" %}
-      {% set iconcard = "bookicon" %}
+      {% set iconcard = "./bookicon.njk" %}
    {% else %}
       {% set subtitle = "Devis" %}
       {% set iconcolor = "bg-icondevis" %}
-      {% set iconcard = "devisicon" %}
+      {% set iconcard = "./devisicon.njk" %}
    {% endif %}
 
 
 <div class=" flex items-center w-carwidth bg-white m-1 h-24 border-solid border border-bordercard shadow">
 <div>
-<div class="w-10 h-10 rounded-full mx-4 my-6 {{iconcolor}}">
-    {# {% include "../iconcard/{{iconcard}}" %} #}
+<div class=" flex w-10 h-10 rounded-full mx-4 my-6 {{iconcolor}}">
+   <div class="fill-current text-white mx-2 my-2">{% include iconcard %}</div>
 </div>
 </div>
 <div>
